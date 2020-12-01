@@ -2687,7 +2687,7 @@ textarea.form-control {
   color: #fff;
   -webkit-transition: background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
-  border-bottom: 1px solid #30bb64;
+  border-bottom: 1px solid #ededed;
 }
 
 .accordionTitle:before,
