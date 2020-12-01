@@ -2576,7 +2576,7 @@ textarea.form-control {
 }
 
 .tabset {
-  text-align: right;
+  text-align: center;
   direction: rtl;
   padding: 25px;
 }
@@ -2687,7 +2687,7 @@ textarea.form-control {
   color: #fff;
   -webkit-transition: background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .accordionTitle:before,
