@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "IRANSans";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/eot/IRANSansWeb_Bold.eot");
+  src: url("../fonts/eot/IRANSansWeb_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb_Bold.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb_Bold.woff") format("woff"), url("../fonts/ttf/IRANSansWeb_Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IRANSans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/eot/IRANSansWeb_Medium.eot");
+  src: url("../fonts/eot/IRANSansWeb_Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb_Medium.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb_Medium.woff") format("woff"), url("../fonts/ttf/IRANSansWeb_Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IRANSans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/eot/IRANSansWeb_Light.eot");
+  src: url("../fonts/eot/IRANSansWeb_Light.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb_Light.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb_Light.woff") format("woff"), url("../fonts/ttf/IRANSansWeb_Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IRANSans";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/eot/IRANSansWeb_UltraLight.eot");
+  src: url("../fonts/eot/IRANSansWeb_UltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb_UltraLight.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb_UltraLight.woff") format("woff"), url("../fonts/ttf/IRANSansWeb_UltraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IRANSans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/eot/IRANSansWeb.eot");
+  src: url("../fonts/eot/IRANSansWeb.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb.woff") format("woff"), url("../fonts/ttf/IRANSansWeb.ttf") format("truetype");
+}
+
+.card {
+  --color1: #46C3C3;
+  --color2: #1D4E89;
+  --color3: #1D4E89;
+  position: relative;
+  font-family: "IRANSanse";
+  font-weight: 700;
+  font-size: 20px;
+  display: block;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--color1), var(--color2) 100%);
+  -webkit-box-shadow: 2px 2px 0 2px var(--color3), 20px 10px 50px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 0 2px var(--color3), 20px 10px 50px rgba(0, 0, 0, 0.25);
+  width: 250px;
+  height: 164px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  padding: 17px;
+  -webkit-transform: rotate3d(1, -0.35, 1, 30deg);
+          transform: rotate3d(1, -0.35, 1, 30deg);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+  z-index: 12;
+}
+
+.card::after {
+  font-family: "IRANSanse";
+  content: '';
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(40%, rgba(255, 255, 255, 0.1)), color-stop(60%, rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1) 40%, rgba(255, 255, 255, 0.1) 60%, rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  top: -50%;
+  bottom: -50%;
+  left: 0;
+  width: 80%;
+  opacity: 0;
+  -webkit-transition: opacity 300ms, -webkit-transform 100ms 300ms;
+  transition: opacity 300ms, -webkit-transform 100ms 300ms;
+  transition: transform 100ms 300ms, opacity 300ms;
+  transition: transform 100ms 300ms, opacity 300ms, -webkit-transform 100ms 300ms;
+  -webkit-transform: translateX(-100%) rotate(-20deg);
+          transform: translateX(-100%) rotate(-20deg);
+}
+
+.card:not(:last-child) {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 17px;
+  padding: 5px;
+  font-weight: 500;
+  color: #e9e9e9;
+}
+
+.card:hover {
+  -webkit-transform: translate(7px, -27px) rotate3d(360, 0, -98.5, -5deg);
+          transform: translate(7px, -27px) rotate3d(360, 0, -98.5, -5deg);
+}
+
+.card:hover::after {
+  opacity: 1;
+  -webkit-transform: translateX(150%) rotate(-20deg);
+          transform: translateX(150%) rotate(-20deg);
+  -webkit-transition: -webkit-transform 1s 280ms;
+  transition: -webkit-transform 1s 280ms;
+  transition: transform 1s 280ms;
+  transition: transform 1s 280ms, -webkit-transform 1s 280ms;
+}
+
+.card--dark-blue {
+  --color1: #20BAC5;
+  --color2: #3276ab;
+  --color3: #154556;
+}
+
+.card--blue {
+  --color1: #3b574d;
+  --color2: #298dfe;
+  --color3: #416167;
+}
+
+.card--darker-blue {
+  --color1: #00B2CA;
+  --color2: #705DD4;
+  --color3: #1A5B92;
+}
+
+.card__icon {
+  width: 52px;
+  height: 52px;
+}
+
+.card__icon use {
+  width: 100%;
+  height: 100%;
+  color: var(--color2);
+}
+
+.card__class {
+  padding: 0.5em 0 0.25em;
+  text-align: center;
+}
+
+.card__name {
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+/*# sourceMappingURL=Wow.css.map */

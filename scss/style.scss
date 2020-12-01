@@ -1,0 +1,27 @@
+@import "./fonts.scss";
+@import "./Wow.scss";
+@import "./Radloader";
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "./search";
+@import "site-base";
+@import"./hoverFont.scss";
+@import"./materialssRad.scss";
+@import"./car";
+@import"./services";
+
+/* Navbar */
+
+@import"./defHT.scss";
+@import"./hrStyles.scss";
+@import"./footer.scss";
+@import "site-navbar";
+@import"./styleTab-pannel.scss";
+@import"./styleTab-collapse.scss";
+
+/* Blocks */
+
+.imgRadi {
+    background: url("../pics/gmail6.png");
+}

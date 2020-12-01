@@ -1,0 +1,37 @@
+.hover-me a {
+  margin-left: 8px;
+  margin-right: 8px;
+  font-weight: 400;
+  padding: 20px 0px;
+  color: #f1f1f1 !important;
+  display: inline-block;
+  text-decoration: none !important;
+}
+
+.hover-me a:after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px #ffbf00;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+.hover-me a:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.hover-me a.fromright:after {
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+}
+
+.hover-me a.fromleft:after {
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+}
+/*# sourceMappingURL=hoverFont.css.map */

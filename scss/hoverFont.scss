@@ -1,0 +1,27 @@
+.hover-me {
+    a {
+        margin-left: 8px;
+        margin-right: 8px;
+        font-weight: 400;
+        padding: 20px 0px;
+        color: #f1f1f1 !important;
+        display: inline-block;
+        text-decoration: none !important;
+    }
+    a:after {
+        display: block;
+        content: '';
+        border-bottom: solid 3px #ffbf00;
+        transform: scaleX(0);
+        transition: transform 300ms ease-in-out;
+    }
+    a:hover:after {
+        transform: scaleX(1);
+    }
+    a.fromright:after {
+        transform-origin: 100% 50%;
+    }
+    a.fromleft:after {
+        transform-origin: 0 50%;
+    }
+}
