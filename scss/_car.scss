@@ -203,7 +203,7 @@ $border-1: #e1e1e1;
         font-size: 15px;
         color: $white-color;
         font-weight: 700;
-        background: #4971FF;
+        background: #34949c;
         display: inline-block;
         padding: 12px 22px 10px;
         border-radius: 2px 0 0 2px;
@@ -212,6 +212,13 @@ $border-1: #e1e1e1;
         right: 0;
         top: 0;
         cursor: pointer;
+        &:hover {
+            font-size: 15px;
+            color: $white-color;
+            font-weight: 700;
+            background: #205a5f;
+            transition: 0.8s;
+        }
         &.sale {
             background: $primary-color;
         }
